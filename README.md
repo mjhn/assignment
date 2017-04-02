@@ -50,21 +50,21 @@ Output format is always xml. Remaining integrated and consistent with Zillows ou
 ...
 ```	
 The result of any invocation is achieved by evaluating
-'SearchResults/Message/code' representing the result of the invocation.
-'SearchResults/Message/text' providing detail of the invocation.
+'SearchResults/message/code' representing the result of the invocation.
+'SearchResults/message/text' providing detail of the invocation.
 
-#### Code value semantics	
-0   == Sucess
-> 0 == A Zillow error has occured
-< 0 == An error within the application has occured.
+#### Returned Code value semantics	
+##### 0   == Sucess
+##### > 0 == A Zillow error has occured
+##### < 0 == An error within the application has occured.
 
 #### Zillow Documentation
 https://www.zillow.com/howto/api/GetSearchResults.htm
 
 ### Run sample application
-Ensure at least java 1.6 is available on your system
-From a command line console cd to the *build* directory.
-Execute - *run.bat -f ../input.json -t json* or *run.bat -f ../input.xml -t xml*
+1. Ensure at least java 1.6 is available on your system.
+2. From a command line console cd to the *build* directory.
+3. Execute - *run.bat -f ../input.json -t json* or *run.bat -f ../input.xml -t xml*
 
 
 
