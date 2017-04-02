@@ -1,0 +1,1 @@
+java -cp "../lib/json-simple-1.1.1.jar;../lib/commons-io-2.5.jar;./assignment.jar" assignment.main.Main %1 %2 %3 %4
