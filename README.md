@@ -1,13 +1,13 @@
 # Zillow assignment
 
-##Zillow GetSearchResults integration.
+## Zillow GetSearchResults integration.
 
-###Outline
+### Outline
 Submit street address details to Zillow GetSearchResults. Present output to stdout for consumption by caller.
 
 Supported input formats
 
-####JSON input format
+#### JSON input format
 ```javascript
 /**
 *    minimum input requirements.
@@ -21,7 +21,7 @@ Supported input formats
 	"zip":"98109"
 }	
 ```
-####XML input format	
+#### XML input format	
 ```xml
 <!--
 	minimum input requirements.
@@ -37,7 +37,7 @@ Supported input formats
 </Zillowquery>
 ```
 
-####Output
+#### Output
 Output format is always xml. Remaining integrated and consistent with Zillows output format.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -53,15 +53,15 @@ The result of any invocation is achieved by evaluating
 'SearchResults/Message/code' representing the result of the invocation.
 'SearchResults/Message/text' providing detail of the invocation.
 
-####Code value semantics	
+#### Code value semantics	
 0   == Sucess
 > 0 == A Zillow error has occured
 < 0 == An error within the application has occured.
 
-####Zillow Documentation
+#### Zillow Documentation
 https://www.zillow.com/howto/api/GetSearchResults.htm
 
-###Run sample application
+### Run sample application
 Ensure at least java 1.6 is available on your system
 From a command line console cd to the *build* directory.
 Execute - *run.bat -f ../input.json -t json* or *run.bat -f ../input.xml -t xml*
