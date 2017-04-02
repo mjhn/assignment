@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Zillowquery>
+  <streetNumber>5678</streetNumber>
+  <streetName>this street</streetName>
+  <city>Wako</city>
+  <state>TX</state>
+  <zip>12345</zip>
+</Zillowquery>
