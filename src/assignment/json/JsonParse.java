@@ -1,12 +1,9 @@
 package assignment.json;
 
 import java.io.File;
-
 import org.json.simple.JSONObject;
-//import org.json.simple.JSONArray;
 import org.json.simple.parser.ParseException;
 import org.json.simple.parser.JSONParser;
-//import org.json.simple.JSONValue;
 import org.apache.commons.io.*;
 import java.io.IOException;
 import assignment.exceptions.InputValidationException;
@@ -21,24 +18,6 @@ import assignment.util.ZillowQueryObj;
  */
 public class JsonParse {
 
-	public static void main(String[] args){
-		
-		try {
-			File inputFile = new File(args[0]);
-			String content = FileUtils.readFileToString(inputFile, "UTF-8");
-			ZillowQueryObj q = JsonParse.parse(content, null);
-			System.out.println(q);
-		}
-		catch(IOException e){	
-			System.err.println(e);
-		}
-		catch(ParseException pe){	
-			System.err.println("JSON parse error - position: " + pe.getPosition() + " " + pe);
-		}
-		catch (InputValidationException e) {
-			System.err.println(e);
-		}
-	}
 	
 	/**
 	 * 
